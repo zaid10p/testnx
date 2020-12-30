@@ -8,6 +8,7 @@ import {Featurelib } from "@testnx/featurelib";
 import { useDispatch, useSelector } from 'react-redux';
 import { add } from './main-slice.slice';
 
+import {About} from "../../../todos/src/app/about";
 
 export function App() {
   const history = useHistory();
@@ -28,6 +29,8 @@ export function App() {
         <ul className="resources">
           <li>
          <Link to="/feature"> Featurelib</Link>
+         <br></br>
+         <Link to="/about"> About </Link>
           </li>
           <li className="col-span-2">
             <a
@@ -68,9 +71,15 @@ export function App() {
           </li>
         </ul>
      
-      <Route path="/feature">
+     <>
+     <Route path="/feature">
             <Featurelib name="featurename"/>
           </Route>
+          <Route path="/about">
+            <About />
+          </Route>
+     </>
+     
     </div>
   );
 }
