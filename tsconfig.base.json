@@ -16,7 +16,8 @@
     "baseUrl": ".",
     "paths": {
       "@testnx/data": ["libs/data/src/index.ts"],
-      "@testnx/ui": ["libs/ui/src/index.ts"]
+      "@testnx/ui": ["libs/ui/src/index.ts"],
+      "@testnx/featurelib": ["libs/featurelib/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
